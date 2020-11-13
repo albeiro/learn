@@ -1,0 +1,41 @@
+# Drupal with PostgreSQL
+#
+# Access via "http://localhost:8080"
+#   (or "http://$(docker-machine ip):8080" if using docker-machine)
+#
+# During initial Drupal setup,
+# Database type: PostgreSQL
+# Database name: postgres
+# Database username: postgres
+# Database password: example
+# ADVANCED OPTIONS; Database host: postgres
+
+version: '3.1'
+
+services:
+
+  drupal:
+    image: drupal:9.0.7-apache
+    ports:
+      - 8080:80
+    volumes:
+      - "./respaldoDrupal:/var/www/html"
+      #- "~/Documents/docker/alcanos/web/profiles:/var/www/html/profiles"
+      #- "~/Documents/docker/alcanos/web/themes:/var/www/html/themes"
+      # this takes advantage of the feature in Docker that a new anonymous
+      # volume (which is what we're creating here) will be initialized with the
+      # existing content of the image at the same location
+      #- "~/Documents/docker/alcanos/web/sites:/var/www/html/sites"
+    restart: always
+    userns_mode: "host"
+
+  postgres:
+    image: postgres:10
+    environment:
+      POSTGRES_PASSWORD: example
+    restart: always
+    volumes:
+      #- "~/Documents/docker/alcanos/web/db:/var/lib/postgresql/data"
+      - "./db:/var/lib/postgresql/data"
+    userns_mode: "host"
+  
