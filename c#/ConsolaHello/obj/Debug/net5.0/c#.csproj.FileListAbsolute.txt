@@ -1,0 +1,16 @@
+J:\Projects\learn\c#\ConsolaHello\bin\Debug\net5.0\c#.exe
+J:\Projects\learn\c#\ConsolaHello\bin\Debug\net5.0\c#.deps.json
+J:\Projects\learn\c#\ConsolaHello\bin\Debug\net5.0\c#.runtimeconfig.json
+J:\Projects\learn\c#\ConsolaHello\bin\Debug\net5.0\c#.runtimeconfig.dev.json
+J:\Projects\learn\c#\ConsolaHello\bin\Debug\net5.0\c#.dll
+J:\Projects\learn\c#\ConsolaHello\bin\Debug\net5.0\ref\c#.dll
+J:\Projects\learn\c#\ConsolaHello\bin\Debug\net5.0\c#.pdb
+J:\Projects\learn\c#\ConsolaHello\obj\Debug\net5.0\c#.csprojAssemblyReference.cache
+J:\Projects\learn\c#\ConsolaHello\obj\Debug\net5.0\c#.GeneratedMSBuildEditorConfig.editorconfig
+J:\Projects\learn\c#\ConsolaHello\obj\Debug\net5.0\c#.AssemblyInfoInputs.cache
+J:\Projects\learn\c#\ConsolaHello\obj\Debug\net5.0\c#.AssemblyInfo.cs
+J:\Projects\learn\c#\ConsolaHello\obj\Debug\net5.0\c#.csproj.CoreCompileInputs.cache
+J:\Projects\learn\c#\ConsolaHello\obj\Debug\net5.0\c#.dll
+J:\Projects\learn\c#\ConsolaHello\obj\Debug\net5.0\ref\c#.dll
+J:\Projects\learn\c#\ConsolaHello\obj\Debug\net5.0\c#.pdb
+J:\Projects\learn\c#\ConsolaHello\obj\Debug\net5.0\c#.genruntimeconfig.cache
