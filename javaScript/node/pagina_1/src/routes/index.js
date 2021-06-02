@@ -1,12 +1,12 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req, res) =>{
-    res.render('index', {title: 'Firts web site'})
+router.get('/', (req, res) => {
+    res.render('index.html', { title: 'Firts web sites' })
 })
 
-router.get('/contac', (req, res) =>{
-    res.render('contac', {title: 'Contact Page'})
+router.get('/contact', (req, res) => {
+    res.render('contact.html', { title: 'Contact Page' })
 })
 
-module.exports =  router
+module.exports = router

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <%- include ('partials/head.html') %>
+</head>
+
+<body>
+
+    <%- include ('partials/navigation.html') %>
+        <div class="continer">
+            <div class="row">
+                <div class="col-lg-12 text-center mt-2 mb-2">
+                    <img src="img/coffee.png" alt="" width="200px">
+                </div>
+            </div>
+        </div>
+        <div class="continer-fluid ">
+            <div class="row bg-dark text-white p-5 text-center">
+                <div class="col-md-6">
+                    <i class="fas fa-mug-hot fa-7x"></i>
+                </div>
+                <div class="col-md-6" id="about">
+                    <h3>Coffee</h3>
+                    <p>Coffee production in Colombia has a reputation as producing mild, well-balanced coffee beans. Colombia's average annual coffee production of 11.5 million bags is the third total highest in the world, after Brazil and Vietnam, though
+                        highest in terms of the arabica bean. </p>
+                </div>
+            </div>
+        </div>
+
+        <%- include ('partials/footer.html') %>
+
+
+</body>
+
+</html>
