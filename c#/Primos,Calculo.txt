@@ -1,0 +1,74 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+		String n;
+		while ((n = Console.ReadLine() ) != null)
+			Console.WriteLine(is_my_number_prime(n));
+	}
+	
+	 public static String is_my_number_prime(String input)
+    {
+    	 //Su código va acá
+    	 int number = Convert.ToInt32(input);
+    	 string result = "PRIMO";
+    	 for(var i=2; i<number; i++)
+    	 {
+    		if(number%i == 0){
+    			result = "NO_ES_PRIMO";
+    			continue;
+    		};
+    	 }
+    	return result;
+	 	
+
+    } 
+    
+}
+
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+		String n;
+		while ((n = Console.ReadLine() ) != null)
+			Console.WriteLine(handler(n));
+	}
+	
+	 public static String handler(String input)
+    {
+    	 //Su código va acá
+    	 string[] codigosArray = input.Split(',');
+    	 string numerosRecompuestos =",";
+    	 foreach(var codigo in codigosArray){
+			var codigoTrim = codigo.Trim(); 
+    	 	var codigoSinBinario = codigo.Replace("1","").Replace("0","");
+    	 	if( String.IsNullOrEmpty(codigoTrim) || codigoTrim.Length > 9 || codigoSinBinario.Length >0){
+    	 		numerosRecompuestos = "";
+    	 		continue;
+    	 	}
+    	 	
+    	 	
+    	 	if (codigoTrim.Substring(codigoTrim.Length -3) != "100")
+    	 	{
+    	 		numerosRecompuestos += "," + codigoTrim.Substring(0, codigoTrim.Length -3) +"100";
+    	 	}else{
+    	 		numerosRecompuestos +=  "," + codigoTrim;
+    	 	}
+    	 	
+    	 }
+    	 
+    	 if(numerosRecompuestos == ","){
+    	 	numerosRecompuestos = "";
+    	 }else{
+    		numerosRecompuestos = numerosRecompuestos.Replace(",,","");
+    	 }
+    	 
+    	return numerosRecompuestos;
+    } 
+    
+}
